@@ -20,6 +20,7 @@ body {
     background-color: var(--forth-color);
     font-family: var(--font);
     height: 100vh;
+    gap: 50px;
 }
 
 /* Desktop design  */
@@ -28,11 +29,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .container {
     justify-content: space-evenly;
-    flex-direction: column;
     width: 400px;
     height: 600px;
     background-color: var(--fifth-color);
