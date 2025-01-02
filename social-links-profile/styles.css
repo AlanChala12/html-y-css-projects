@@ -34,13 +34,15 @@ body {
     color: var(--p-color);
     min-height: 100vh;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     font-family: var(--font);
+    padding: 30px;
 }
 
 .container {
+    max-width: 400px;
     width: 400px;
-    min-height: 650px;
+    max-height: 650px;
     background-color: var(--black);
     justify-content: space-between;
     border-radius: 10px;
