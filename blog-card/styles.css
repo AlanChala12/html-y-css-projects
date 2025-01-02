@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: 'figtree';
+    font-family: figtree;
     src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
 }
 
@@ -16,6 +16,8 @@
     --second-color: hsl(0, 0%, 7%);
 
     --p-font: 1rem;
+
+    --font: figtree, Arial, Helvetica, sans-serif;
 }
 
 .flex {
@@ -27,13 +29,14 @@
 
 body {
     background-color: var(--bg-color);
-    height: 100vh;
+    min-height: 100vh;
     gap: 30px;
-    font-family: 'figtree';
+    font-family: var(--font);
+    padding: 0 20px;
 }
 
 .container {
-    width: 370px;
+    max-width: 370px;
     height: 550px;
     border: 2px solid black;
     background-color: var(--card-color);
@@ -44,7 +47,7 @@ body {
 }
 
 .main-img img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     border-radius: 20px;
@@ -111,9 +114,3 @@ body {
     text-align: center;
 }
 
-
-@media (max-width: 375px) {
-    .container {
-        width: 340px;
-    }
-}
